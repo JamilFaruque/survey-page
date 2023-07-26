@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Customer Survey</title>
+</head>
+
+<body>
+  <div class="preloader">
+    <h3>please wait a moment </h3>
+    </div>
+  <!-- nav -->
+  <div class="container">
+    <nav>
+      <img class="logo-left" src="assets/logo.png" alt="">
+      <img class="logo-right" src="assets/cca_logo.png" alt="">
+    </nav>
+  </div>
+
+  <!-- main -->
+  <main>
+    <div class="wrapper">
+      <div id="content-01" class="contents">
+        <div class="title">
+          <div>
+            <h1>Start of Loan</h1>
+            <h2>Survey</h2>
+          </div>
+          <img src="assets/cca_logo.png" alt="">
+        </div>
+        <div class="survey-status">
+          Thank you for using ACME Finance
+        </div>
+        <div class="desc">
+          We greatly value your input and would sincerely appreciate it if you could take a few moments to complete a
+          feedback survey following the recent granting of your loan.
+        </div>
+
+        <p class="survey-time">This survey will take aroung 3 minutes</p>
+
+        <button class="btn start-btn">Start</button>
+      </div>
+      <!-- survey page 02 -->
+      <div id="content-02" class="contents hidden">
+        <form action="">
+          <div class="pointers">
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+          </div>
+
+          <div class="backward">
+            <svg id="backward-icon" class="back-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+            <div class="order"><span>1</span>/8</div>
+            <svg id="forward-icon" class="next-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
+          </div>
+
+          <div class="survey-title">
+            <h1 class="survey-number">1.</h1>
+            <p class="survey-q">The details of how the loan would operate were clearly explained to me.</p>
+          </div>
+
+          <div class="survey-options">
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q1-r1">
+              
+              <label class="ripple-label" for="q1-r1">1</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q1-r2">
+              
+              <label class="ripple-label" for="q1-r2">2</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q1-r3">
+              
+              <label class="ripple-label" for="q1-r3">3</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q1-r4">
+            
+              <label class="ripple-label" for="q1-r4">4</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q1-r5">
+
+              <label class="ripple-label" for="q1-r5">5</label>
+            </div>
+          </div>
+
+          <div class="pointer-meter">
+            <p>Disagree</p>
+            <p>Agree</p>
+          </div>
+
+          <div class="aa">
+            <button class="btn next-btn">Next</button>
+            <span class="an"></span>
+          </div>
+          
+
+        </form>
+      </div>
+      <!-- survey page 03 -->
+      <div id="content-03" class="anim contents hidden">
+        <form action="">
+          <div class="pointers">
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+          </div>
+
+          <div class="backward">
+            <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+            <div class="order"><span>2</span>/8</div>
+            <svg class="next-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
+          </div>
+
+          <div class="survey-title">
+            <h1 class="survey-number">2.</h1>
+            <p class="survey-q">There was no pressure from the agent or ACME Finance to take out a loan.</p>
+          </div>
+
+          <div class="survey-options">
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q2-r1">
+              <label class="ripple-label" for="q2-r1">1</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q2-r2">
+              <label class="ripple-label" for="q2-r2">2</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q2-r3">
+              <label class="ripple-label" for="q2-r3">3</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q2-r4">
+              <label class="ripple-label" for="q2-r4">4</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q2-r5">
+              <label class="ripple-label" for="q2-r5">5</label>
+            </div>
+          </div>
+
+          <div class="pointer-meter">
+            <p>Disagree</p>
+            <p>Agree</p>
+          </div>
+          <button class="btn next-btn">Next</button>
+        </form>
+      </div>
+      <!-- survey page 04 -->
+      <div id="content-04" class="anim contents hidden">
+        <form action="">
+          <div class="pointers">
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+          </div>
+
+          <div class="backward">
+            <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+            <div class="order"><span>3</span>/8</div>
+            <svg class="next-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
+          </div>
+
+          <div class="survey-title">
+            <h1 class="survey-number">3.</h1>
+            <p class="survey-q">I was advised about other borrowing options I could explore before finalising the loan with ACME Finance.</p>
+          </div>
+
+          <div class="survey-options">
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q3-r1">
+              <label class="ripple-label" for="q3-r1">1</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q3-r2">
+              <label class="ripple-label" for="q3-r2">2</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q3-r3">
+              <label class="ripple-label" for="q3-r3">3</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q3-r4">
+              <label class="ripple-label" for="q3-r4">4</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q3-r5">
+              <label class="ripple-label" for="q3-r5">5</label>
+            </div>
+          </div>
+
+          <div class="pointer-meter">
+            <p>Disagree</p>
+            <p>Agree</p>
+          </div>
+          <button class="btn next-btn">Next</button>
+        </form>
+      </div>
+      <!-- survey page 05 -->
+      <div id="content-05" class="anim contents hidden">
+        <form action="">
+          <div class="pointers">
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+          </div>
+
+          <div class="backward">
+            <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+            <div class="order"><span>4</span>/8</div>
+            <svg class="next-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
+          </div>
+
+          <div class="survey-title">
+            <h1 class="survey-number">4.</h1>
+            <p class="survey-q">The clarity and transparency about the total amount payable and the weekly repayment agreement were satisfactory.</p>
+          </div>
+
+          <div class="survey-options">
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q4-r1">
+              <label class="ripple-label" for="q4-r1">1</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q4-r2">
+              <label class="ripple-label" for="q4-r2">2</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q4-r3">
+              <label class="ripple-label" for="q4-r3">3</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q4-r4">
+              <label class="ripple-label" for="q4-r4">4</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q4-r5">
+              <label class="ripple-label" for="q4-r5">5</label>
+            </div>
+          </div>
+
+          <div class="pointer-meter">
+            <p>Disagree</p>
+            <p>Agree</p>
+          </div>
+          <button class="btn next-btn">Next</button>
+        </form>
+      </div>
+      <!-- survey page 06 -->
+      <div id="content-06" class="anim contents hidden">
+        <form action="">
+          <div class="pointers">
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+          </div>
+
+          <div class="backward">
+            <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+            <div class="order"><span>5</span>/8</div>
+            <svg class="next-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
+          </div>
+
+          <div class="survey-title">
+            <h1 class="survey-number">5.</h1>
+            <p class="survey-q">It was explained that no additional fees or interest, beyond the original interest, would be applied to my loan.</p>
+          </div>
+
+          <div class="survey-options">
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q5-r1">
+              <label class="ripple-label" for="q5-r1">1</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q5-r2">
+              <label class="ripple-label" for="q5-r2">2</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q5-r3">
+              <label class="ripple-label" for="q5-r3">3</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q5-r4">
+              <label class="ripple-label" for="q5-r4">4</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q5-r5">
+              <label class="ripple-label" for="q5-r5">5</label>
+            </div>
+          </div>
+
+          <div class="pointer-meter">
+            <p>Disagree</p>
+            <p>Agree</p>
+          </div>
+          <button class="btn next-btn">Next</button>
+        </form>
+      </div>
+      <!-- survey page 07 -->
+      <div id="content-07" class="anim contents hidden">
+        <form action="">
+          <div class="pointers">
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+          </div>
+
+          <div class="backward">
+            <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+            <div class="order"><span>6</span>/8</div>
+            <svg class="next-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
+          </div>
+
+          <div class="survey-title">
+            <h1 class="survey-number">6.</h1>
+            <p class="survey-q">I received clear guidance for dealing with repayment problems or changes in my situation</p>
+          </div>
+
+          <div class="survey-options">
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q6-r1">
+              <label class="ripple-label" for="q6-r1">1</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q6-r2">
+              <label class="ripple-label" for="q6-r2">2</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q6-r3">
+              <label class="ripple-label" for="q6-r3">3</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q6-r4">
+              <label class="ripple-label" for="q6-r4">4</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q6-r5">
+              <label class="ripple-label" for="q6-r5">5</label>
+            </div>
+          </div>
+
+          <div class="pointer-meter">
+            <p>Disagree</p>
+            <p>Agree</p>
+          </div>
+          <button class="btn next-btn">Next</button>
+        </form>
+      </div>
+      <!-- survey page 08 -->
+      <div id="content-08" class="anim contents hidden">
+        <form action="">
+          <div class="pointers">
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+          </div>
+
+          <div class="backward">
+            <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+            <div class="order"><span>7</span>/8</div>
+            <svg class="next-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
+          </div>
+
+          <div class="survey-title">
+            <h1 class="survey-number">7.</h1>
+            <p class="survey-q">I would feel comfortable reaching out to the agent to discuss any potential difficulties regarding loan repayment.</p>
+          </div>
+
+          <div class="survey-options">
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q7-r1">
+              <label class="ripple-label" for="q7-r1">1</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q7-r2">
+              <label class="ripple-label" for="q7-r2">2</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q7-r3">
+              <label class="ripple-label" for="q7-r3">3</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q7-r4">
+              <label class="ripple-label" for="q7-r4">4</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q7-r5">
+              <label class="ripple-label" for="q7-r5">5</label>
+            </div>
+          </div>
+
+          <div class="pointer-meter">
+            <p>Disagree</p>
+            <p>Agree</p>
+          </div>
+          <button class="btn next-btn">Next</button>
+        </form>
+      </div>
+      <!-- survey page 09 -->
+      <div id="content-09" class="anim contents hidden">
+        <form action="">
+          <div class="pointers">
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+          </div>
+
+          <div class="backward">
+            <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+            <div class="order"><span>8</span>/8</div>
+            <svg class="next-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
+          </div>
+
+          <div class="survey-title">
+            <h1 class="survey-number">8.</h1>
+            <p class="survey-q">I am satisfied with the overall loan service provided by ACME Finance.</p>
+          </div>
+
+          <div class="survey-options">
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q8-r1">
+              <label class="ripple-label" for="q8-r1">1</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q8-r2">
+              <label class="ripple-label" for="q8-r2">2</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q8-r3">
+              <label class="ripple-label" for="q8-r3">3</label>
+            </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q8-r4">
+              <label class="ripple-label" for="q8-r4">4</label>
+              </div>
+            <div class="ripple">
+              <input class="ripple-input" name="survey-option" type="radio" id="q8-r5">
+              <label class="ripple-label" for="q8-r5">5</label>
+            </div>
+          </div>
+
+          <div class="pointer-meter">
+            <p>Disagree</p>
+            <p>Agree</p>
+          </div>
+          <button class="btn next-btn">Send</button>
+        </form>
+      </div>
+
+      <!-- last page -->
+      <div id="content-01" class="contents hidden">
+        <div class="title">
+          <div>
+            <h1>Survey</h1>
+            <h2>Sent</h2>
+          </div>
+          <img src="assets/cca_logo.png" alt="">
+        </div>
+        <div class="survey-status">
+          Thank you for your time and support!
+        </div>
+        <div style="margin-bottom: 20px;" class="desc">
+          Your survey is now complete and has been received.
+        </div>
+        <div class="desc">
+          Your insights are invaluable in helping us improve our services and provide you with an even better experience in the future.
+        </div>
+
+        <p class="survey-time"></p>
+
+        <button class="btn restart-btn">Restart</button>
+      </div>
+
+    </div>
+  </main>
+  <!-- footer -->
+
+  <div class="container">
+    <footer>
+      <img class="footer-logo" src="https://cloud.sdxmessaging.com/resources/sdx/poweredby.svg" alt="">
+    </footer>
+  </div>
+
+
+</body>
+
+</html8
